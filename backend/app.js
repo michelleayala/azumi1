@@ -4,6 +4,7 @@ var config = require('./config.js').config
 global.app = express();
 var mongoose = require('mongoose');
 
+var user_route = require('./routes/user');
 
 mongoose.connect('mongodb://127.0.0.1:27017/'+ config.db,{useNewUrlParser:true,useUnifiedTopology:true},(err,res)=>{
     if(err){
@@ -16,6 +17,7 @@ mongoose.connect('mongodb://127.0.0.1:27017/'+ config.db,{useNewUrlParser:true,u
 app.use(bodyparser.json()); //support json encoded bodies
 app.use(bodyparser.urlencoded({extended:true})); //support encoded bodies
 
+//app.use('/',express.static(__dirname + '/pagina'))
 
 app.listen(config.puerto,function(){
     console.log('servidor funcionando por el puerto' + config.puerto)
@@ -29,5 +31,6 @@ app.use((req,res,next)=>{
     next();
 });
 
+app.use('/api',user_route);
 
 module.exports = app;

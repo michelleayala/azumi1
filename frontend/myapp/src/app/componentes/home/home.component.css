@@ -139,7 +139,7 @@ header .container .col-md-7 p {
     text-decoration: none;
 }
 .footer .links a:hover{
-    color:rgb(62, 203, 177);
+  color:rgb(62, 203, 177);
 }
 .footer .credit{
     font-size: 1.5em;

@@ -137,11 +137,6 @@ button:hover {
 .btn-show-pass {
   font-size: 15px;
   color: #999999;
-
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: flex;
   align-items: center;
   position: absolute;
@@ -183,10 +178,6 @@ button:hover {
 
 /* Login button */
 .container-login-form-btn {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -213,7 +204,6 @@ button:hover {
   background: linear-gradient(right, #21d4fd, #b721ff, #21d4fd, #b721ff);
   top: 0;
   left: -100%;
-
   -webkit-transition: all 0.4s;
   -o-transition: all 0.4s;
   -moz-transition: all 0.4s;
@@ -225,11 +215,6 @@ button:hover {
   color: #fff;
   line-height: 1.2;
   text-transform: uppercase;
-
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: flex;
   justify-content: center;
   align-items: center;
