@@ -9,7 +9,9 @@ import { HomeComponent } from './componentes/home/home.component';
 import { PaneladminComponent } from './componentes/paneladmin/paneladmin.component';
 import { LoginComponent } from './componentes/login/login.component';
 import { TiendaComponent } from './componentes/tienda/tienda.component';
-import { routing } from "./app.routing";
+import { ProductosComponent } from './componentes/productos/productos.component';
+import { IniciopanelComponent } from './componentes/iniciopanel/iniciopanel.component';
+import { Page404Component } from './componentes/page404/page404.component';
 
 @NgModule({
   declarations: [
@@ -17,14 +19,16 @@ import { routing } from "./app.routing";
     HomeComponent,
     PaneladminComponent,
     LoginComponent,
-    TiendaComponent
+    TiendaComponent,
+    ProductosComponent,
+    IniciopanelComponent,
+    Page404Component
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule,
-    routing
+    HttpClientModule
 
   ],
   providers: [],
