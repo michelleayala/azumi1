@@ -6,14 +6,17 @@ import { LoginComponent } from './componentes/login/login.component';
 import { Page404Component } from './componentes/page404/page404.component';
 import { PaneladminComponent } from './componentes/paneladmin/paneladmin.component';
 import { ProductosComponent } from './componentes/productos/productos.component';
+import { TiendaComponent } from './componentes/tienda/tienda.component';
 
 
 const routes: Routes = [
-  {path: '', component: PaneladminComponent},
+  {path: '', component: HomeComponent},
+  {path: 'tienda', component: TiendaComponent},
   {path: 'inicio', component: IniciopanelComponent},
   {path: 'productos', component: ProductosComponent},
   {path: 'login', component: LoginComponent},
-  {path: '**', component: Page404Component,pathMatch:'full'}
+  {path: '**', component: Page404Component,pathMatch:'full'},
+  {path: '', redirectTo: '/tienda', pathMatch: 'full'}
 ];
 
 @NgModule({
